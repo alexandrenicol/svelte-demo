@@ -1,5 +1,12 @@
 :root {
   --s1: 1rem;
+  --colour-primary: #cc3d3d;
+  --colour-white: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 main {

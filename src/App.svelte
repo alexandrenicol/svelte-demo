@@ -6,6 +6,7 @@
   import Switcher from "./components/layout/Switcher.svelte";
   import type { University } from "./lib/University";
   import MyShortlists from "./components/elements/MyShortlists.svelte";
+  import Header from "./components/elements/Header.svelte";
 
   let universityRequest: Promise<University[]>;
 
@@ -26,6 +27,7 @@
   });
 </script>
 
+<Header pageTitle="BridgeU with a twist" />
 <main>
   {#if universityRequest}
     {#await universityRequest}
